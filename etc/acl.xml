@@ -23,9 +23,12 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Eadesigndev_Eacore::index" title="EaDesign Details">
+                <resource id="Magento_Backend::eadesign" title="EaDesign EaCore">
+                    <resource id="Eadesigndev_Eacore::other" title="EaDesign Other">
+
+                    </resource>
+                    <resource id="Eadesigndev_Eacore::index" title="EaDesign Details"/>
                 </resource>
-                
             </resource>
         </resources>
     </acl>

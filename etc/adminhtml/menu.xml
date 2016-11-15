@@ -24,23 +24,23 @@
              title="EaDesign"
              module="Eadesigndev_Eacore"
              sortOrder="80"
-             resource="Magento_Backend::eadesign"
+             resource="Magento_Backend::admin"
         />
         <add id="Eadesigndev_Eacore::other"
              title="Other"
              module="Eadesigndev_Eacore"
              sortOrder="999"
-             resource="Eadesigndev_Eacore::other"
+             resource="Magento_Backend::eadesign"
              parent="Eadesigndev_Eacore::eadesign"
         />
 
-        <add id="Eadesigndev_Eacore::other_details"
+        <add id="Eadesigndev_Eacore::index"
              title="Details"
              module="Eadesigndev_Eacore"
              sortOrder="1000"
-             parent="Eadesigndev_Eacore::other"
              action="eacore/index"
-             resource="Eadesigndev_Eacore::other"
+             resource="Eadesigndev_Eacore::index"
+             parent="Eadesigndev_Eacore::other"
         />
     </menu>
 </config>
