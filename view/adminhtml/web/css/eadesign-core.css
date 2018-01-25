@@ -3,7 +3,7 @@
 }
 
 .eacore-index-index h1.page-title {
-    background: url("../images/ealog-horiz.png") no-repeat left top;
-    width: 520px;
+    background: url("../images/logo.png") no-repeat left top;
     height: 120px;
+    background-size: 204px 120px;;
 }
