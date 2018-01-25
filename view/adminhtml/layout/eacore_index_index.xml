@@ -25,7 +25,7 @@
         <css src="Eadesigndev_Eacore::css/eadesign-core.css"/>
     </head>
     <body>
-        <referenceContainer name="admin.scope.col.wrap" htmlClass="admin__old" />
+        <referenceContainer name="admin.scope.col.wrap"/>
         <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template" name="eacore_detail" template="Eadesigndev_Eacore::other/details.phtml" toHtml="true">
                 <arguments>
