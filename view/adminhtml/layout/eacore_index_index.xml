@@ -21,11 +21,10 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <link src="http://fonts.googleapis.com/css?family=Oswald" src_type="url" />
+        <link src="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" src_type="url" type="text/css"/>
         <css src="Eadesigndev_Eacore::css/eadesign-core.css"/>
     </head>
     <body>
-        <referenceContainer name="admin.scope.col.wrap" htmlClass="admin__old" />
         <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template" name="eacore_detail" template="Eadesigndev_Eacore::other/details.phtml" toHtml="true">
                 <arguments>

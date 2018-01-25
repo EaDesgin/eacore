@@ -1,9 +1,42 @@
+.detailtext.before-end{
+    margin-bottom: 30px;
+}
 .detailtext {
-    font-size: 16px;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #483f66;
+    width: 950px;
+    line-height: 29px;
+}
+.detailtext a{
+    text-decoration: none;
+    font-size: 23px;
+    display: inline-block;
+    color: #f26422;
+    font-weight: 700;
 }
 
 .eacore-index-index h1.page-title {
-    background: url("../images/ealog-horiz.png") no-repeat left top;
-    width: 520px;
+    background: url("../images/logo.png") no-repeat left top;
     height: 120px;
+    background-size: 172px 105px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.eacore-index-index h3.title-details{
+    font-family: 'Oswald', sans-serif;
+    font-size: 76px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    line-height: 37px;
+    display: inline-block;
+    color: #483f66;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.eacore-index-index .iframe{
+    text-align: center;
 }
