@@ -26,7 +26,7 @@
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" name="eacore_detail" template="Eadesigndev_Eacore::other/details.phtml" toHtml="true">
+            <block class="Magento\Framework\View\Element\Template" name="eacore_detail" template="Eadesigndev_Eacore::other/details.phtml">
                 <arguments>
                     <argument name="tab_label" xsi:type="string" translate="true">EaDesign</argument>
                     <argument name="sort_order" xsi:type="number">10</argument>
