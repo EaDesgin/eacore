@@ -2,7 +2,7 @@
   "name": "eadesignro/module-eacore",
   "description": "The module with the menu and other features needed by other modules developed by EaDesign",
   "type": "magento2-module",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "autoload": {
     "files": [
       "registration.php"
