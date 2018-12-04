@@ -20,10 +20,10 @@
 
 namespace Eadesigndev\Eacore\Controller\Adminhtml\Index;
 
-class Index extends \Eadesigndev\Eacore\Controller\Adminhtml\Eacore
+use Magento\Framework\App\ActionInterface;
+
+class Index extends \Eadesigndev\Eacore\Controller\Adminhtml\Eacore implements ActionInterface
 {
-
-
     private $helper;
 
     /**
@@ -32,7 +32,9 @@ class Index extends \Eadesigndev\Eacore\Controller\Adminhtml\Eacore
     protected $resultPageFactory;
 
     /**
+     * Index constructor.
      * @param \Magento\Backend\App\Action\Context $context
+     * @param \Eadesigndev\Eacore\Helper\Data $helper
      * @param \Magento\Framework\Registry $coreRegistry
      * @param \Magento\Framework\View\Result\PageFactory $resultPageFactory
      */
@@ -41,8 +43,7 @@ class Index extends \Eadesigndev\Eacore\Controller\Adminhtml\Eacore
         \Eadesigndev\Eacore\Helper\Data $helper,
         \Magento\Framework\Registry $coreRegistry,
         \Magento\Framework\View\Result\PageFactory $resultPageFactory
-    )
-    {
+    ) {
         $this->helper = $helper;
         $this->resultPageFactory = $resultPageFactory;
         parent::__construct($context, $coreRegistry);
@@ -63,5 +64,4 @@ class Index extends \Eadesigndev\Eacore\Controller\Adminhtml\Eacore
         $this->initPage($resultPage)->getConfig()->getTitle()->prepend(__('&nbsp;'));
         return $resultPage;
     }
-
 }

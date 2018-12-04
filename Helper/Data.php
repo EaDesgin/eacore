@@ -46,6 +46,9 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * Data constructor.
      * @param \Magento\Framework\App\Helper\Context $context
+     * @param \Magento\Framework\Module\ModuleListInterface $moduleList
+     * @param \Magento\Framework\Module\ResourceInterface $moduleResource
+     * @param \Magento\Store\Model\StoreManagerInterface $storeManager
      * @param \Magento\Framework\HTTP\Client\Curl $curl
      */
     public function __construct(
@@ -54,8 +57,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         \Magento\Framework\Module\ResourceInterface $moduleResource,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
         \Magento\Framework\HTTP\Client\Curl $curl
-    )
-    {
+    ) {
         $this->_moduleList = $moduleList;
         $this->moduleResource = $moduleResource;
         $this->storeManager = $storeManager;

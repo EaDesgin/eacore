@@ -20,17 +20,19 @@
 
 namespace Eadesigndev\Eacore\Controller\Adminhtml;
 
-abstract class Eacore extends \Magento\Backend\App\Action
+use Magento\Framework\App\ActionInterface;
+
+abstract class Eacore extends \Magento\Backend\App\Action implements ActionInterface
 {
 
-    CONST ADMIN_RESOURCE_VIEW = 'Eadesigndev_Eacore::index';
+    const ADMIN_RESOURCE_VIEW = 'Eadesigndev_Eacore::index';
 
     /**
      * Core registry
      *
      * @var \Magento\Framework\Registry
      */
-    protected $coreRegistry;
+    private $coreRegistry;
 
     /**
      * @param \Magento\Backend\App\Action\Context $context
@@ -68,5 +70,4 @@ abstract class Eacore extends \Magento\Backend\App\Action
     {
         return $this->_authorization->isAllowed(self::ADMIN_RESOURCE_VIEW);
     }
-
 }
