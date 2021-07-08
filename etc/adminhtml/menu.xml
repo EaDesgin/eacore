@@ -24,7 +24,7 @@
              title="EaDesign"
              module="Eadesigndev_Eacore"
              sortOrder="80"
-             resource="Magento_Backend::admin"
+             resource="Magento_Backend::eadesign"
         />
         <add id="Eadesigndev_Eacore::other"
              title="Other"
